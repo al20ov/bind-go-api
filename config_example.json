@@ -1,0 +1,8 @@
+{
+    "dns_address": "192.168.1.2",
+    "dns_port": 53,
+    "statistics_port": 8080,
+    "listen_address": ":3000",
+    "tsig_key_name": "axfr.",
+    "tsig_key_secret": "QqztxtAUv8SAQ3vrBUbZJVjFqZmpiSRxjDyDxB0+OG4="
+}
