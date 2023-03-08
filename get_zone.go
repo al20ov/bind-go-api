@@ -33,7 +33,7 @@ func GetZone(zone string, server string, tsig Tsig) ([]byte, error) {
 	var response []RRecord
 
 	for _, record := range value.RR {
-		if !(record.Header().Rrtype == dns.TypeSOA) {
+		if !(record.Header().Rrtype == dns.TypeSOA || record.Header().Rrtype == dns.TypeDHCID) {
 			split := strings.Fields(record.String())
 
 			response = append(response, RRecord{
