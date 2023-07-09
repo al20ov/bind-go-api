@@ -2,8 +2,8 @@ package main
 
 import (
 	"log"
-
-	"github.com/gofiber/fiber/v2"
+	"" +
+		"github.com/gofiber/fiber/v2"
 )
 
 type Payload struct {
@@ -17,6 +17,7 @@ type Payload struct {
 
 func main() {
 	config := LoadConfiguration()
+
 
 	tsig := config.TsigKey
 
